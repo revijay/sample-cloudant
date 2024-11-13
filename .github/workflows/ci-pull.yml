@@ -27,7 +27,8 @@ jobs:
             COUCHDB_PASSWORD: password
         # Set health checks to wait until couchdb has started
         options: >-
-          --health-cmd "echo 'db.runCommand("ping").ok' | couchdbsh --quiet"
+          #--health-cmd "echo 'db.runCommand("ping").ok' | couchdbsh --quiet"
+          --health-cmd "curl -f http://localhost:5984/_up || exit 1"
           --health-interval 10s
           --health-timeout 5s
           --health-retries 5
