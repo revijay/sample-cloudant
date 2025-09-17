@@ -12,7 +12,7 @@
 
 	<webApplication location="CloudantSample.war" contextRoot="/"/>
   	
-  	<variable name="cloudant.apikey" value="PnRdwcfLH-Gu4mY5UtuJRsNup4Fp3ZBzYV0AFZ8VTxgb"/>
+  	<variable name="cloudant.apikey" value=""/>
   	<variable name="cloudant.servicename" value="Cloudant-rv01"/>
   	<variable name="cloudant.host" value="c904df7d-4c02-450b-9ab2-d62aeb297151-bluemix.cloudantnosqldb.appdomain.cloud"/>
     <variable name="cloudant.dbname" value="admin"/> <!-- Use admin to avoid configuring the container with users-->
